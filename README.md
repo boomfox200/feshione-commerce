@@ -1,6 +1,6 @@
-#Feshione Commerce
+# Feshione Commerce
 
-#stack
+# stack
 
 - html
 - sass
