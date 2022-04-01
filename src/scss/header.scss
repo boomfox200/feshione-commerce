@@ -1,0 +1,96 @@
+.header {
+  padding: 0 100px 0 100px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.header-block {
+  max-width: 1740px;
+  display: flex;
+  margin: 0 auto;
+  min-height: 74px;
+  align-items: center;
+  &__logo {
+    a {
+      font-family: "Cookie";
+      font-weight: 400;
+      font-size: 56px;
+      color: #000000;
+    }
+  }
+  &__container {
+    width: 1140px;
+    flex: 1 1 auto;
+    display: flex;
+    .header-container-menu {
+      width: 645px;
+      margin: 0 auto;
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        li {
+          a {
+            font-family: "Josefin Sans";
+            font-weight: 400;
+            font-size: 14px;
+            align-items: center;
+            color: #000000;
+            text-transform: uppercase;
+            &:hover {
+              &::before {
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1.3s all;
+                width: 40px;
+              }
+            }
+            &::before {
+              content: " ";
+              position: absolute;
+              margin-top: 15px;
+              height: 2px;
+              background: #ca1515;
+              width: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__cart-block {
+    display: flex;
+    justify-content: space-around;
+    width: 390px;
+  }
+}
+
+.cart-block {
+  &__register {
+    a {
+      font-family: "Josefin Sans";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      color: #000000;
+    }
+  }
+  &__search {
+  }
+  &__like {
+    i {
+      color: white;
+      background: #111111;
+      border-radius: 23px;
+      padding: 4px;
+    }
+  }
+  &__cart {
+    i {
+      color: white;
+      background: #ca1515;
+      border-radius: 23px;
+      padding: 4px;
+    }
+  }
+}
