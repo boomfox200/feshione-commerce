@@ -2,9 +2,15 @@
 @import "_clear";
 @import "fonts";
 @import "header";
+@import "_breadcrumb";
 
 /*------------------------------------start basic settings-------------------------*/
 body {
-  background: #dbd2c6;
+  background: #e5e5e5;
 }
 
+.container {
+  max-width: 1140px;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+.breadcrumb {
+  .container {
+    display: flex;
+    height: 110px;
+    align-items: center;
+  }
+}
+.container-breadcrumb {
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &:first-child {
+      &::before {
+        content: "\01F3E0";
+        padding-right: 10px;
+      }
+    }
+    li {
+      &:not(:first-of-type) {
+        padding-left: 30px;
+        font-family: "Josefin Sans";
+        font-weight: 400;
+        font-size: 18px;
+        color: #c4c4c4;
+      }
+      a {
+        position: relative;
+        font-family: "Josefin Sans";
+        color: #000000;
+        font-size: 18px;
+        &::after {
+          content: "\276F";
+          position: absolute;
+          margin: 3px 10px 0 10px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
